@@ -1,0 +1,57 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Climate Impact - Homework 2\"\n",
+        "author: \"Matilde Saucedo, Julia Field, Kat Le\"\n",
+        "editor: visual\n",
+        "jupyter: \n",
+        "  kernelspec:\n",
+        "    name: \"eds296-stevenson\"\n",
+        "    language: \"python\"\n",
+        "    display_name: \"Python (eds296-stevenson)\"\n",
+        "    path: \"/Users/katle/opt/anaconda3/envs/eds296-stevenson/bin/python3\"\n",
+        "---"
+      ],
+      "id": "cb8e196a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Import necessary packages\n",
+        "import xarray as xr\n",
+        "import matplotlib.pyplot as plt\n",
+        "import intake\n",
+        "import s3fs"
+      ],
+      "id": "f36ab15f",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "# Open the CMIP6 data catalog, store as a variable\n",
+        "catalog = intake.open_esm_datastore('https://cmip6-pds.s3.amazonaws.com/pangeo-cmip6.json')"
+      ],
+      "id": "ebe690ff",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "eds296-stevenson",
+      "language": "python",
+      "display_name": "Python (eds296-stevenson)",
+      "path": "/Users/katle/opt/anaconda3/envs/eds296-stevenson/bin/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

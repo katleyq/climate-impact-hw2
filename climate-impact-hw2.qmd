@@ -1,0 +1,25 @@
+---
+title: "Climate Impact - Homework 2"
+author: "Matilde Saucedo, Julia Field, Kat Le"
+editor: visual
+jupyter: 
+  kernelspec:
+    name: "eds296-stevenson"
+    language: "python"
+    display_name: "Python (eds296-stevenson)"
+    path: "/Users/katle/opt/anaconda3/envs/eds296-stevenson/bin/python3"
+---
+
+```{python}
+# Import necessary packages
+import xarray as xr
+import matplotlib.pyplot as plt
+import intake
+import s3fs
+```
+
+```{python}
+# Open the CMIP6 data catalog, store as a variable
+catalog = intake.open_esm_datastore('https://cmip6-pds.s3.amazonaws.com/pangeo-cmip6.json')
+```
+
