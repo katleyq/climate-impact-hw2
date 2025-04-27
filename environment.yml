@@ -1,0 +1,23 @@
+name: climate-impact-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - esmpy=7.1.0
+  - xesmf
+  - xarray
+  - matplotlib
+  - intake
+  - intake-xarray
+  - s3fs
+  - netcdf4
+  - dask
+  - numpy
+  - pandas
+  - scipy
+  - ipykernel
+  - jupyter
+  - pip
+  - pip:
+    - pymannkendall
+    - "fsspec>=2023.1.0"
